@@ -27,7 +27,7 @@ html, body {
     height: 100%;
     width: 100%;
     line-height: 1;
-    font-size: 14px;
+    font-size: 1rem;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -84,7 +84,7 @@ body {
 
 .wrapper {
     padding: 1vw;
-    border: 2px solid black;
+    border: .2rem solid black;
     width: 60%;
     height: 60%;
     min-height: fit-content;
@@ -138,6 +138,8 @@ body {
 }
 
 .btn {
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
     margin: 10px;
     transition: 0.3s;
@@ -169,6 +171,7 @@ body {
 
 .title {
     font-size: 0;
+    font-weight: bold;
     transition: 0.5s;
     flex-basis: 0;
     display: flex;
@@ -180,22 +183,22 @@ body {
 
 .btn:nth-child(1):checked ~ .title__container .title:nth-child(1) {
     flex-basis: 100%;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .btn:nth-child(2):checked ~ .title__container .title:nth-child(2) {
     flex-basis: 100%;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .btn:nth-child(3):checked ~ .title__container .title:nth-child(3) {
     flex-basis: 100%;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .btn:nth-child(4):checked ~ .title__container .title:nth-child(4) {
     flex-basis: 100%;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 
