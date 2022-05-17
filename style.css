@@ -83,6 +83,7 @@ body {
 }
 
 .wrapper {
+    border-radius: 5%;
     border: 2px solid black;
     width: 60%;
     height: 60%;
@@ -91,6 +92,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    background-color: #cdcdcd;
 }
 
 .meme__container {
@@ -105,31 +107,35 @@ body {
 /*}*/
 
 .btn:nth-child(1):checked ~ .meme__container .meme:nth-child(1) {
-    background: gray;
+    background-image: url("./assets/memes/1.jpg");
     flex-basis: 100%;
 }
 
 .btn:nth-child(2):checked ~ .meme__container .meme:nth-child(2) {
-    background: green;
+    background-image: url("./assets/memes/2.jpg");
     flex-basis: 100%;
 }
 
 .btn:nth-child(3):checked ~ .meme__container .meme:nth-child(3) {
-    background: yellow;
+    background-image:url("./assets/memes/3.jpg") ;
     flex-basis: 100%;
 }
 
 .btn:nth-child(4):checked ~ .meme__container .meme:nth-child(4) {
-    background: black;
+    background-image:url("./assets/memes/4.jpg") ;
     flex-basis: 100%;
 }
 
 .meme {
+    border-radius: 5%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     transition: 0.5s;
     flex-basis: 0;
     width: 100%;
     height: 100%;
-    background-color: red;
+
 }
 
 .btn {
