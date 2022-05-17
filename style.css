@@ -83,7 +83,7 @@ body {
 }
 
 .wrapper {
-    border-radius: 5%;
+    padding: 1vw;
     border: 2px solid black;
     width: 60%;
     height: 60%;
@@ -127,7 +127,6 @@ body {
 }
 
 .meme {
-    border-radius: 5%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -163,8 +162,9 @@ body {
 .title__container {
     order: 2;
     display: flex;
-    width: 100%;
+    width: 30%;
     height: 10%;
+    margin-right: auto;
 }
 
 .title {
@@ -198,4 +198,14 @@ body {
     font-size: 14px;
 }
 
+
+@media (max-width: 700px) {
+    .meme__container{
+        height: 70%;
+    }
+
+    .title__container{
+        width: 100%;
+    }
+}
 
