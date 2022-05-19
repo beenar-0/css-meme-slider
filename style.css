@@ -37,10 +37,6 @@ input, button, textarea {
     font-family: inherit;
 }
 
-input::-ms-clear {
-    display: none;
-}
-
 button {
     cursor: pointer;
 }
@@ -137,28 +133,65 @@ body {
 
 }
 
-.btn {
+label {
     width: 2rem;
     height: 2rem;
     cursor: pointer;
-    margin: 10px;
+    margin: 1vh;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.wrapper input:nth-child(1) {
+.btn {
+    display: none;
+}
+
+.wrapper label:nth-child(5) {
     order: 3;
 }
 
-.wrapper input:nth-child(2) {
+.wrapper label:nth-child(6) {
     order: 4;
 }
 
-.wrapper input:nth-child(3) {
+.wrapper label:nth-child(7) {
     order: 5;
 }
 
-.wrapper input:nth-child(4) {
+.wrapper label:nth-child(8) {
     order: 6;
+}
+
+.round{
+    background: #cdcdcd;
+    display: block;
+    width: 70%;
+    height: 70%;
+    border: .2rem solid black;
+    border-radius: 50%;
+}
+
+.btn:nth-child(1):checked ~ label:nth-child(5) > .round {
+    background: black;
+}
+
+.btn:nth-child(2):checked ~ label:nth-child(6) > .round {
+    background: black;
+}
+
+.btn:nth-child(3):checked ~ label:nth-child(7) > .round {
+    background: black;
+}
+
+.btn:nth-child(4):checked ~ label:nth-child(8) > .round {
+  background: black;
+}
+
+label:hover .round{
+    background: green;
 }
 
 .title__container {
@@ -209,6 +242,32 @@ body {
 
     .title__container{
         width: 100%;
+        margin: 0;
+        flex-basis: 100%;
+    }
+
+    .wrapper label:nth-child(5) {
+        order: 2;
+    }
+
+    .wrapper label:nth-child(6) {
+        order: 3;
+    }
+
+    .wrapper label:nth-child(7) {
+        order: 4;
+    }
+
+    .wrapper label:nth-child(8) {
+        order: 5;
+    }
+
+    .title__container {
+        order: 6;
+        display: flex;
+        width: 30%;
+        height: 10%;
+        margin-right: auto;
     }
 }
 
